@@ -16,6 +16,10 @@
 // console.log(day_of_week(4));
 // console.log(day_of_week(10));
 
+const printToDom = (divId, textToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML = textToPrint;
+}
 
 function day_of_week (day) {
     switch(day) {
@@ -37,9 +41,10 @@ function day_of_week (day) {
     }
 }
 
-day_of_week(5);
-day_of_week(2);
-day_of_week(4);
-day_of_week(10);
-
-
+const init = () => {
+    day_of_week(5);
+    day_of_week(2);
+    day_of_week(6);
+    day_of_week(10);
+}
+init();

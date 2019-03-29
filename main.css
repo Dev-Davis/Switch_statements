@@ -1,3 +1,7 @@
 body {
     background-color: slategray;
 }
+
+.subText {
+    font-size: 16px;
+}
